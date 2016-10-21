@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tour Operator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+	<section class="portada background">
+		<header class="header">
+			<h1 class="logo">TourOperator</h1>
+			<span id="burguer-button" class="burguer-button icon-menu"></span>
+			<div class="contacto">
+				<div class="texto">
+					<p><span class="icon-phone"></span> +569 91234567</p>
+					<p><span class="icon-envelope"></span> contacto@touroperator.cl</p>
+				</div>
+				<div class="flag">
+					<img src="images/flag/Spain2.png" alt="">
+					<img src="images/flag/United Kingdom(Great Britain).png" alt="">	
+				</div>
+			</div>
+			
+		</header>
+		<nav id="menu" class="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="#quienessomos">Quienes Somos</a></li>
+					<li><a href="#" id="destino">Destinos<span class="icon-arrow_drop_down2"></span></a>
+						<ul id="dropdown" class="dropdown">
+							
+							<li>
+								<a href="parquenevado.html">P. Nacional Nevador Tres Cruces</a>
+							</li>
+							<li>
+								<a href="pandeazucar.html">P. Nacional Pan de Azúcar</a>
+							</li>
+							<li>
+								<a href="#playalavirgen">Playa La Virgen</a>
+							</li>
+							<li>
+								<a href="#bahia">Bahía Inglesa</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Programas</a></li>
+					<li><a href="#">Fotografías</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		<!-- <div class="redes">
+			<p><span class="icon-phone"></span> +569 91234567</p>
+			<span class="icon-facebook"></span>
+			<span class="icon-twitter"></span>
+			<span class="icon-instagram"></span>
+		</div>
+		<div class="left triangle"></div>
+  		<div class="right triangle"></div>-->
+	</section>
+	<section class="contenido">
+		<div class="contenedor index">
+			<h1>Tour Operator</h1>
+			<div class="contenedor-item">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, aut. Itaque esse dicta magnam iure ipsum labore, unde nisi molestiae. Blanditiis nisi excepturi alias perspiciatis sunt nesciunt ea adipisci earum?
+				</p>
+			
+				<!-- <a href="parquenevado.html">
+					<article class="item">
+						<figure>
+							<img src="images/item/portada.jpg" alt="">
+						</figure>
+						<figcaption>
+							<h3><span class="icon-location"></span> P. Nacional Nevador Tres Cruces </h3>
+						</figcaption>
+					</article>
+				</a>
+				<a href="#">
+					<article class="item">
+						<figure>
+							<img src="images/item/bahia-inglesa.jpg" alt="">
+						</figure>
+						<figcaption>
+							<h3><span class="icon-location"></span> Bahia Inglesa</h3>
+						</figcaption>
+					</article>
+				</a>
+				<a href="#">
+					<article class="item">
+						<figure>
+							<img src="images/item/DSC_8668.JPG" alt="">
+						</figure>
+						<figcaption>
+							<h3><span class="icon-location"></span> Playa La Virgen</h3>
+						</figcaption>
+					</article>
+				</a>
+				<a href="#">
+					<article class="item">
+						<figure>
+							<img src="images/item/PAN-DE-AZUCAR_WEB.jpg" alt="">
+						</figure>
+						<figcaption>
+							<h3><span class="icon-location"></span> P. Nacional Pan de Azucar </h3>
+						</figcaption>
+					</article>
+				</a> -->
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="left2 triangle2"></div>
+  		<div class="right2 triangle2"></div>
+  		<div class="contacto">
+  			<h1 class="logo">
+				TourOperator
+			</h1>
+			<p><span class="icon-phone"></span> +569 91234567</p>
+			<p><span class="icon-envelope"></span> contacto@touroperator.cl</p>
+  		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>
+	  WebFont.load({
+	    google: {
+	      families: ['Kaushan Script', 'Montserrat:400,700']
+	    }
+	  });
+	</script>
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.chocolate.js"></script>
+	<script>
+		$(function() {
+			$('.background').chocolate({
+				images		: ['images/background/portada.jpg', 'images/background/bahia-inglesa.jpg', 'images/background/DSC_8668.JPG', 'images/background/PAN-DE-AZUCAR_WEB.jpg'],
+				interval	: 5000,
+				speed		: 3000,
+			});
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script>
+		var consulta = window.matchMedia('(max-width: 650px)');
+    	consulta.addListener(mediaQuery);
+
+    	var $burguerButton = document.getElementById('burguer-button');
+    	var $menu = document.getElementById('menu');
+    	
+    	function toggleMenu(){
+    		$menu.classList.toggle('active')
+    	};
+
+    	function showMenu(){
+    		$menu.classList.add('active')
+    	};
+
+    	function hideMenu(){
+    		$menu.classList.remove('active')
+    	};
+
+    	function mediaQuery() {
+    		if(consulta.matches) {
+    			console.log('se cumplio');
+    			$burguerButton.addEventListener('touchstart', toggleMenu);
+	    	}
+	    	else {
+	    		console.log('no se cumplio');
+    			$burguerButton.removeEventListener('touchstart', toggleMenu);
+
+	    	}
+    	}
+    	mediaQuery();
+
+    	var $body = document.body;
+
+    	var gestos = new Hammer($body);
+		gestos.on('swiperight', hideMenu);
+		gestos.on('swipeleft', showMenu);
+
+		var $drop = document.getElementById("dropdown");
+
+		function toggleDestino(){
+    		$drop.classList.toggle('active')
+    	};
+		var $destino = document.getElementById('destino');
+		$destino.addEventListener('click', toggleDestino);
+	</script>
+	<link rel="stylesheet" href="css/estilo.min.css">
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Parque Nacional Pan de Azúcar | Tour Operator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">	
+</head>
+<body>
+	<section class="portada background">
+		<header class="header">
+			<h1 class="logo">TourOperator</h1>
+			<span id="burguer-button" class="burguer-button icon-menu"></span>
+			<div class="contacto">
+				<div class="texto">
+					<p><span class="icon-phone"></span> +569 91234567</p>
+					<p><span class="icon-envelope"></span> contacto@touroperator.cl</p>
+				</div>
+				<div class="flag">
+					<img src="images/flag/Spain2.png" alt="">
+					<img src="images/flag/United Kingdom(Great Britain).png" alt="">	
+				</div>
+			</div>
+		</header>
+		<nav id="menu" class="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#quienessomos">Quienes Somos</a></li>
+				<li><a href="#" id="destino">Destinos<span class="icon-arrow_drop_down2"></span></a>
+					<ul id="dropdown" class="dropdown">
+						
+						<li>
+							<a href="parquenevado.html">P. Nacional Nevador Tres Cruces</a>
+						</li>
+						<li>
+							<a href="pandeazucar.html">P. Nacional Pan de Azúcar</a>
+						</li>
+						<li>
+							<a href="#playalavirgen">Playa La Virgen</a>
+						</li>
+						<li>
+							<a href="#bahia">Bahía Inglesa</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Programas</a></li>
+				<li><a href="#">Fotografías</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+		<div class="contenedor">
+			<h1 class="titulo1">Full Day Parque Nacional Pan de Azúcar</h1>
+		</div>
+	</section>
+	<section class="contenido">
+		<div class="contenedor contenedor-pandeazucar">
+			<!-- <h1>
+				Full Day P. N Pan de Azúcar 
+			</h1> -->
+			<div class="promocion">
+				<div class="contenedor-slider">
+					<div class="slider">
+						<ul>
+							<li><img src="images/item/bahia-inglesa.jpg" alt=""></li>
+							<li><img src="images/item/DSC_8668.JPG" alt=""></li>
+							<li><img src="images/item/PAN-DE-AZUCAR_WEB.jpg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<p>
+					Combinación perfecta entre el desierto y el mar que abre la puerta al hermoso Parque Nacional Pan de Azúcar. Te invitamos a recorrer los caminos que conducen  a paredes naturales de tierra y rocas, al silencio al viento y al cielo como único horizonte, donde además podrán ser parte de un ecosistema único de desierto costero con una diversificada flora y fauna endémica.
+					<button class="button">Cotizar</button>
+				</p>
+			</div>
+			<div class="detalles">
+				<article class="item">
+					<h2>Incluye</h2>
+					<ul>
+						<li>Entrada</li>
+						<li>Traslados</li>
+						<li>3 comidas</li>
+					</ul>
+				</article>
+				<article class="item">
+					<h2>No incluye / trae</h2>
+					<ul>
+						<li>Ropa para días fríos</li>
+						<li>Ropa para días calurosos</li>
+						<li>Anteojos de sol</li>
+						<li>Bloqueador</li>
+					</ul>
+				</article>
+				<article class="item">
+					<h2>Circuito</h2>
+					<p>
+						Salida desde la ciudad de Copiapó con destino a  Bahía Inglesa  y posteriormente a  Chañaral  donde  realizaremos  un pequeño city tour. Luego  nos trasladamos hasta el Parque Nacional Pan de Azúcar, visitaremos la Playa Piqueros donde contara con tiempo libre para fotografiar o simplemente descansar en las suaves  arenas de la playa. Disfrutaremos  de un exquisito almuerzo  al aire libe con vista a  la Isla Pan de Azúcar  y recorreremos los alrededores para realizar un tour al interior del parque hasta el mirador y otros sitios de interés.  Para finalizar visitaremos la Caleta Pan de Azúcar donde además podrá comer  unas ricas empanadas a la orilla de la Playa. Regreso a la ciudad.
+					</p>
+				</article>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="left2 triangle2"></div>
+  		<div class="right2 triangle2"></div>
+  		<div class="contacto">
+  			<h1 class="logo">
+				TourOperator
+			</h1>
+			<p><span class="icon-phone"></span> +569 91234567</p>
+			<p><span class="icon-envelope"></span> contacto@touroperator.cl</p>
+  		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>
+	  WebFont.load({
+	    google: {
+	      families: ['Kaushan Script', 'Montserrat:400,700']
+	    }
+	  });
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script>
+		var consulta = window.matchMedia('(max-width: 650px)');
+    	consulta.addListener(mediaQuery);
+
+    	var $burguerButton = document.getElementById('burguer-button');
+    	var $menu = document.getElementById('menu');
+    	
+    	function toggleMenu(){
+    		$menu.classList.toggle('active')
+    	};
+
+    	function showMenu(){
+    		$menu.classList.add('active')
+    	};
+
+    	function hideMenu(){
+    		$menu.classList.remove('active')
+    	};
+
+    	function mediaQuery() {
+    		if(consulta.matches) {
+    			console.log('se cumplio');
+    			$burguerButton.addEventListener('touchstart', toggleMenu);
+	    	}
+	    	else {
+	    		console.log('no se cumplio');
+    			$burguerButton.removeEventListener('touchstart', toggleMenu);
+
+	    	}
+    	}
+    	mediaQuery();
+
+    	var $body = document.body;
+
+    	var gestos = new Hammer($body);
+		gestos.on('swiperight', hideMenu);
+		gestos.on('swipeleft', showMenu);
+
+		var $drop = document.getElementById("dropdown");
+
+		function toggleDestino(){
+    		$drop.classList.toggle('active')
+    	};
+		var $destino = document.getElementById('destino');
+		$destino.addEventListener('click', toggleDestino);
+	</script>
+	<script src="js/unslider.js"></script>
+	<link rel="stylesheet" href="css/estilo.min.css">
+	<link rel="stylesheet" href="css/unslider.css">
+	<script>
+		jQuery(document).ready(function($) {
+			$('.slider').unslider({
+				autoplay: true 
+			});
+		});
+	</script>
+</body>
+</html>

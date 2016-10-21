@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Parque Nevado Tres Cruces | Tour Operator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	
+</head>
+<body>
+	<section class="portada background">
+		<header class="header">
+			<h1 class="logo">TourOperator</h1>
+			<span id="burguer-button" class="burguer-button icon-menu"></span>
+			<div class="contacto">
+				<div class="texto">
+					<p><span class="icon-phone"></span> +569 91234567</p>
+					<p><span class="icon-envelope"></span> contacto@touroperator.cl</p>
+				</div>
+				<div class="flag">
+					<img src="images/flag/Spain2.png" alt="">
+					<img src="images/flag/United Kingdom(Great Britain).png" alt="">	
+				</div>
+			</div>
+		</header>
+		<nav id="menu" class="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="#quienessomos">Quienes Somos</a></li>
+					<li><a href="#" id="destino">Destinos<span class="icon-arrow_drop_down2"></span></a>
+						<ul id="dropdown" class="dropdown">
+							
+							<li>
+								<a href="parquenevado.html">P. Nacional Nevador Tres Cruces</a>
+							</li>
+							<li>
+								<a href="pandeazucar.html">P. Nacional Pan de Azúcar</a>
+							</li>
+							<li>
+								<a href="#playalavirgen">Playa La Virgen</a>
+							</li>
+							<li>
+								<a href="#bahia">Bahía Inglesa</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Programas</a></li>
+					<li><a href="#">Fotografías</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		<div class="contenedor">
+				<h1 class="titulo"> Full day Parque Nacional Nevado <br> <span>Tres Cruces</span></h1>
+			</div>
+		<!-- <div class="left triangle"></div>
+  		<div class="right triangle"></div> -->
+	</section>
+	<section class="contenido">
+		<div class="contenedor">
+			<div class="texto1">
+				<p>
+					Te invitamos a recorrer los caminos de la cultura y vivir un día junto a la fauna altiplánica, contrastes de colores y geografías que constituyen uno de los paisajes mas lindo de Chile.
+					En este recorrido por el altiplano y cordillera podrás conocer el salar de Maricunga, Parque Nacional Nevado Tres Cruces, Laguna Verde y Volcán Ojos del Salado.
+
+				</p>
+				<figure>
+					<img src="images/FEX4589.jpg" width="200" alt="">
+				</figure>
+			</div>
+			<div class="texto2">
+				<h2>Altiplano Sobrecogedor</h2>
+				<p>
+					Circuito que se extiende por un largo día de aprox. 12 horas partiendo desde la ciudad de Copiapó en dirección a la Laguna Santa Rosa ubicada a 3.800 msnm. Desde ahí podemos contemplar la belleza escénica del Nevado Tres Cruces y observar la fauna local como flamencos, Piuquenes, Guanacos y Vicuñas que disfrutan en libertad de un ambiente natural y prístino. Continuamos la aventura hacia Laguna Verde donde se bordean los 4.300 msnm y maravillarnos con su hermoso paisaje de contrastes de colores y disfrutar de un baño en termas de aguas volcánicas.
+				</p>
+			</div>
+			<div class="texto3">
+				<figure>
+					<img src="images/P1140723.JPG" width="200" alt="">
+				</figure>
+				<div class="lista">
+					<b>Incluye</b>
+					<ul>
+						<li>
+							Traslado en Vehiculo 4x4
+						</li>
+						<li>
+							Guía integral, socorrista en zonas agrestes
+						</li>
+						<li>
+							Alimentación 
+						</li>
+						<li>
+							Sistema de hidratación
+						</li>
+					</ul>
+
+					<b>No incluye/Trae</b>
+					<ul>
+						<li>
+							Ropa para días fríos (parca, polar, gorro)
+						</li>
+						<li>
+							Ropa para días calurosos (cortaviento, polera, traje de baño)
+						</li>
+						<li>
+							Bloqueador					
+						</li>
+					</ul>
+
+
+					<b>Características del Programa</b>
+					<ul>
+						<li>
+							Frecuencia/ Periodo: Octubre a Abril
+						</li>
+						<li>
+							Valor $ 220.000 pp. 
+						</li>
+						<li>
+							Mínimo: 2
+						</li>
+						<li>
+							Máximo: 4
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="left2 triangle2"></div>
+  		<div class="right2 triangle2"></div>
+  		<div class="contacto">
+  			<h1 class="logo">
+				TourOperator
+			</h1>
+			<p><span class="icon-phone"></span> +569 91234567</p>
+			<p><span class="icon-envelope"></span> contacto@touroperator.cl</p>
+  		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>
+	  WebFont.load({
+	    google: {
+	      families: ['Kaushan Script', 'Montserrat:400,700']
+	    }
+	  });
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script>
+		var consulta = window.matchMedia('(max-width: 650px)');
+    	consulta.addListener(mediaQuery);
+
+    	var $burguerButton = document.getElementById('burguer-button');
+    	var $menu = document.getElementById('menu');
+    	
+    	function toggleMenu(){
+    		$menu.classList.toggle('active')
+    	};
+
+    	function showMenu(){
+    		$menu.classList.add('active')
+    	};
+
+    	function hideMenu(){
+    		$menu.classList.remove('active')
+    	};
+
+    	function mediaQuery() {
+    		if(consulta.matches) {
+    			console.log('se cumplio');
+    			$burguerButton.addEventListener('touchstart', toggleMenu);
+	    	}
+	    	else {
+	    		console.log('no se cumplio');
+    			$burguerButton.removeEventListener('touchstart', toggleMenu);
+
+	    	}
+    	}
+    	mediaQuery();
+
+    	var $body = document.body;
+
+    	var gestos = new Hammer($body);
+		gestos.on('swiperight', hideMenu);
+		gestos.on('swipeleft', showMenu);
+
+		var $drop = document.getElementById("dropdown");
+
+		function toggleDestino(){
+    		$drop.classList.toggle('active')
+    	};
+		var $destino = document.getElementById('destino');
+		$destino.addEventListener('click', toggleDestino);
+	</script>
+	<link rel="stylesheet" href="css/estilo.min.css">
+</body>
+</html>

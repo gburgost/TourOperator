@@ -1,0 +1,575 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?xh0mtb');
+  src:  url('../fonts/icomoon.eot?xh0mtb#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?xh0mtb') format('truetype'),
+    url('../fonts/icomoon.woff?xh0mtb') format('woff'),
+    url('../fonts/icomoon.svg?xh0mtb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_drop_down2:before {
+  content: "\e902";
+}
+.icon-envelope:before {
+  content: "\e901";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-arrow-left2:before {
+  content: "\ea40";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+
+a {
+	text-decoration: none;
+}
+body {
+	margin:0;
+	padding: 0;
+	font-family: 'Montserrat';
+	background: #FDFDFE;
+	color: #5B5656;
+}
+
+.contenedor{
+	width: 1200px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+.redes {
+	background: #523F38;
+	color: white;
+	height: 20px;
+	line-height: 1.5;
+	text-align: right;
+	padding: 0 1em;
+}
+.redes span {
+	padding: 0 .5em;
+}
+.redes span:first-child {
+	padding: 0;
+}
+.redes p{
+	display: inline;
+	margin-right: 2em;
+}
+.background {
+	background-image: url(../images/pandeazucar.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.header{
+	position: relative;
+	padding: .5em 1em;
+	color: #5b5656;
+	background: #fdfdfe;
+}
+.header .contacto {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: absolute;
+	right: 1em;
+	top: 2em;
+}
+.header .contacto .texto {
+	margin: 7px;
+}
+.header .contacto .texto p {
+	margin: 0 .5em;
+}
+.header .contacto .texto p,
+.header .contacto .flag img {
+	display: inline;
+}
+.portada {
+	color: white;
+	height: 600px;
+	position: relative;
+}
+
+.logo {
+	font-family: 'Kaushan Script';
+	font-size: 48px;
+	margin: 0;
+	display: inline-block;
+}
+.menu{
+	display: inline-block;
+	font-size: 18px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	background: #523F38;
+}
+.menu ul {
+	margin: 0;
+}
+.menu li {
+	display: inline-block;
+	transition: .3s;
+	padding: .5em;
+}
+.menu li:hover {
+	background: #1EA896;
+}
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+.titulo1{
+	font-size: 40px;
+	line-height: 1.9;
+	position: absolute;
+	bottom: 0;
+}
+
+.titulo{
+	text-align: center;
+	font-size: 60px;
+	margin-top: 120px;
+	line-height: 1.9;
+}
+.titulo span {
+	text-decoration: underline;
+}
+.triangle {
+  border-bottom: 100px solid #FDFDFE;
+  position: absolute;
+  bottom: -20px;
+}
+
+.right {
+    right: 0;
+    border-left: 100vw solid transparent;
+}
+
+.left {
+    left: 0;
+    border-right: 100vw solid transparent;
+}
+.contenido {
+	line-height: 1.9;
+	padding: 2em 0; 
+}
+.index{
+	text-align: center;
+}
+.contenido .contenedor-pandeazucar{
+	margin-top: 1em;
+}
+.contenido .contenedor-pandeazucar h1{
+	margin-top: 0;
+}
+.contenido .contenedor-slider{
+	width: 50%;
+	display: inline-block;
+}
+.unslider {
+	position: relative;
+}
+.unslider-arrow.next,
+.unslider-arrow.prev {
+	top: 40%;
+	color: white;
+	font-size: 20px;
+	background: rgba(0,0,0,.5);
+	padding: .5em;
+	line-height: 0;
+	border-radius: 5px;
+}
+.contenido .contenedor-slider .slider img {
+	width: 100%;
+}
+.promocion p {
+	width: 44%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-left: 1em;
+}
+.promocion .button {
+	background: #FF715B;
+	padding: 1em;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+	margin-top: 1em;
+	width: 100%;
+	cursor: pointer;
+	transition: .3s;
+}
+.promocion .button:hover {
+	background: #e65741;
+}
+.contenedor-pandeazucar h1{
+	font-size: 40px;
+}
+.detalles {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.detalles .item {
+	width: 280px;
+}
+.detalles .item:first-child {
+	width: 160px;
+}
+.detalles .item:last-child {
+	width: 720px;
+}
+.detalles h2{
+	font-size: 25px;
+}
+.contenedor-item {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.index h1{
+	font-size: 40px;
+    border-bottom: 3px solid gainsboro;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 1em;
+}/*
+.item{
+	width: 300px;
+	margin: .5em;
+}
+.item figure {
+	width: 300px;
+	height: 300px;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+}
+.item:hover img{
+	transform: scale(1.5) rotate(3.2deg);
+}
+.item figcaption {
+	background: #FF715B;
+	border-radius: 0 0 10px 10px;
+	color: white;
+}
+.item figcaption h3{
+	padding: .5em;
+	margin: 0;
+}
+.item img {
+	width: 100%;
+	transition: .3s;
+}*/
+
+.texto1,
+.texto2,
+.texto3 {
+	padding: 2em 0;
+}
+
+.texto1 p{
+	display: inline-block;
+	vertical-align: middle;
+	width: 60%;
+	margin-right: 2em;
+}
+.texto1 figure {
+	display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    margin: 0;
+}
+.texto1 figure img {
+	width: 100%;
+	border-radius: 10px;
+}
+.texto3 {
+	text-align: center;
+}
+
+.texto3 p{
+	float: right;
+	position: relative;
+	width: 59%;
+}
+.texto3 figure {
+	display: inline-block;
+    width: 35%;
+    vertical-align: middle;
+    margin: 0;
+}
+.texto3 figure img {
+	width: 100%;
+	border-radius: 10px;
+}
+.texto3 .lista {
+	display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-left: 3em;
+    width: 50%;
+}
+.texto3 .lista li{
+	list-style: none;
+}
+.texto3 .lista li:before{
+	content: '∘';
+	font-size: 50px;
+	line-height: 20px;
+}
+.footer {
+	position: relative;
+	height: 150px;
+	background: #4C5454;
+	padding: 3em;
+	color: white;
+	margin-top: 4em;
+}
+.footer .contacto {
+	text-align: center;
+}
+
+.triangle2 {
+    border-bottom: 100px solid #4C5454;
+    position: absolute;
+    top: -90px;
+}
+
+.right2 {
+    right: 0;
+    border-left: 100vw solid transparent;
+}
+
+.left2 {
+    left: 0;
+    border-right: 100vw solid transparent;
+}
+
+.burguer-button{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	background: #fb8d29;
+	display: inline-block;
+	text-align: center;
+	position: fixed;
+	right: 8px;
+	top: 28px;
+	cursor: pointer;
+	z-index: 3;
+	color:white;
+	display: none;
+}
+@media screen and (min-width: 767px){
+	.menu ul ul{
+		display: none;
+	    position: absolute;
+	    transition: .3s;
+	    padding: 0;
+	    margin-top: 0.5em;
+	    margin-left: -.5em;
+		background: rgba(30, 168, 150, 0.8);
+	}
+	.menu ul li:hover >ul{
+		display: block;
+		font-size: 16px;
+	}
+	.menu ul ul li{
+		display: block;
+		padding: .5em;
+		text-align: left;
+	}
+	.menu ul ul li:hover{
+		background: #1EA896;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	.portada{
+		height: 400px;
+	}
+	.titulo {
+		font-size: 40px;
+		margin: 0;
+		padding: 1em 0;
+	}
+}
+
+@media screen and (max-width: 767px)
+{
+	.header .contacto {
+		position: static;
+		flex-direction: column;
+	}
+	.header .contacto .texto p {
+		display: block;
+	}
+	.index h1{
+		width: 100%;
+	}
+	.titulo,
+	.titulo1 {
+		font-size: 30px;
+	}
+	.texto1,
+	.texto2,
+	.texto3 {
+		padding: 1em 0;
+	}
+	
+	.texto1 p,
+	.texto3 .lista,
+	.texto3 figure {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+
+	.texto1 figure {
+		width: 100%;
+		display: block;
+		margin-top: 2em;
+	}
+	.header {
+		text-align: center;
+	}
+	.menu {
+		background: rgba(30, 168, 150, 0.9);
+		position: fixed;
+		top: 0;
+		z-index: 2;
+		bottom: 0;
+		right: -100%;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		transition: .3s;
+		font-size: 30px;
+		text-align: center;
+	}
+	.menu.active {
+		right: 0;
+	}
+	.menu ul{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.menu li{
+		display: block;
+		margin: 0;
+		padding: 1em 0;
+		border-bottom: 3px solid white;
+	}
+	.menu li:first-child{
+		border-top: 3px solid white;	
+	}
+	.menu ul ul{
+		height: 0;
+		transform: scale(0);
+		position: static;
+		margin:0;
+		font-size: 20px;
+		transition: .3s;
+	}
+	.menu ul ul.dropdown.active{
+		height: 240px;
+		transform: scale(1);
+	}
+	.menu ul ul li{
+		border: none;
+	}
+	.oscuro{
+		background: #fb8d29;
+	}
+	.burguer-button{
+		display: block;
+	}
+	.contenido {
+		margin-top: 0;
+	}
+	.contenedor-pandeazucar h1 {
+    	font-size: 23px;
+	}
+	.contenido .contenedor-slider {
+		display: block;
+		width: 100%;
+	}
+	.unslider-arrow.next,
+	.unslider-arrow.prev {
+		top: 32%;
+	}
+	.promocion p {
+		width: 100%;
+		display: block;
+		margin: 0;
+	}
+	.detalles .item {
+		width: 100% !important;
+	}
+	.footer {
+		padding: 3em 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
