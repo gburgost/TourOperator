@@ -360,35 +360,6 @@ h1{
 	justify-content: center;
 	flex-wrap: wrap;
 }
-/*
-.item{
-	width: 300px;
-	margin: .5em;
-}
-.item figure {
-	width: 300px;
-	height: 300px;
-	margin:0;
-	padding: 0;
-	overflow: hidden;
-}
-.item:hover img{
-	transform: scale(1.5) rotate(3.2deg);
-}
-.item figcaption {
-	background: #FF715B;
-	border-radius: 0 0 10px 10px;
-	color: white;
-}
-.item figcaption h3{
-	padding: .5em;
-	margin: 0;
-}
-.item img {
-	width: 100%;
-	transition: .3s;
-}*/
-
 
 .texto1 p{
 	display: inline-block;
