@@ -155,8 +155,8 @@ h1{
 .header{
 	position: relative;
 	padding: .5em 1em;
-	color: #5b5656;
-	background: #fdfdfe;
+	color: white;
+	background: #FF8A78;
 }
 .header .contacto {
 	display: flex;
@@ -178,7 +178,7 @@ h1{
 }
 .portada {
 	color: white;
-	height: 600px;
+	height: 100vh;
 	position: relative;
 }
 
@@ -226,6 +226,16 @@ h1{
 }
 .titulo span {
 	text-decoration: underline;
+}
+.titulo-contenedor{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	text-align: center;
+	font-family: 'Kaushan Script';
+}
+.titulo-contenedor h1{
+	font-size: 60px;
 }
 .triangle {
   border-bottom: 100px solid #FDFDFE;
@@ -422,7 +432,33 @@ h1{
 .footer .contacto {
 	text-align: center;
 }
-
+.footer-inicio{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	background: red;
+	padding: 1em;
+	background: rgba(76, 84, 84, 0.8);
+	color: white
+}
+.footer-inicio p {
+	display: inline;
+	margin: 0 1em;
+}
+.footer-inicio a {
+	color: white;
+}
+.footer-inicio .face:hover{
+	color: #637BAD;
+}
+.footer-inicio .twitter:hover{
+	color: #55ACEE;
+}
+.footer-inicio .insta:hover{
+	color: #BC2A8D;
+}
 .triangle2 {
     border-bottom: 100px solid #4C5454;
     position: absolute;
@@ -444,7 +480,7 @@ h1{
 	height: 40px;
 	line-height: 40px;
 	border-radius: 50%;
-	background: #fb8d29;
+	background: #D15D4B;
 	display: inline-block;
 	text-align: center;
 	position: fixed;
@@ -533,7 +569,7 @@ h1{
 @media screen and (max-width: 800px)
 {
 	.portada{
-		height: 400px;
+		height: 100vh;
 	}
 	.titulo {
 		font-size: 40px;
@@ -547,6 +583,9 @@ h1{
 
 @media screen and (max-width: 767px)
 {
+	.titulo-contenedor h1{
+		font-size: 40px!important;
+	}
 	.header .contacto {
 		position: static;
 		flex-direction: column;
