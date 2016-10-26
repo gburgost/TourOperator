@@ -156,7 +156,9 @@ h1{
 	position: relative;
 	padding: .5em 1em;
 	color: white;
-	background: #E88525;
+	background: #ff9955;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	z-index: 99;
 }
 .header .contacto {
 	display: flex;
@@ -203,7 +205,7 @@ h1{
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	background: #BD551F;
+	background: #ff8838;
 }
 .menu ul {
 	margin: 0;
