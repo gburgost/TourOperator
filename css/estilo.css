@@ -130,6 +130,10 @@ h1{
 	margin: 0 auto;
 	position: relative;
 }
+.contenedor h1{
+	text-transform: uppercase;
+	font-size: 30px;
+}
 .redes {
 	background: #523F38;
 	color: white;
@@ -157,7 +161,7 @@ h1{
 	position: relative;
 	padding: .5em 1em;
 	color: white;
-	background: #ff9955;
+	background: rgba(255,153,85,0.8);
 	box-shadow: 0 0 10px rgba(0,0,0,.5);
 	z-index: 9;
 }
@@ -206,7 +210,7 @@ h1{
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	background: #ff8838;
+	background: rgba(0,0,0,.5);
 }
 .menu ul {
 	margin: 0;
@@ -302,6 +306,7 @@ h1{
     vertical-align: top;
     margin: 0;
     margin-left: 1em;
+    text-align: justify;
 }
 .button {
 	background: #FF715B;
@@ -315,6 +320,10 @@ h1{
 	cursor: pointer;
 	transition: .3s;
 } 
+.button.cotizar {
+	width: initial;
+	display: block;
+}
 .button:hover {
 	background: #b54534;
 }
@@ -399,6 +408,9 @@ h1{
 	width: 100%;
 	border-radius: 10px;
 }
+.texto2 p {
+		text-align: justify;
+	}
 .texto3 {
 	text-align: center;
 }
@@ -436,7 +448,7 @@ h1{
 .footer {
 	position: relative;
 	height: 150px;
-	background: #4C5454;
+	background: #333;
 	padding: 3em;
 	color: white;
 	margin-top: 4em;
@@ -472,7 +484,7 @@ h1{
 	color: #BC2A8D;
 }
 .triangle2 {
-    border-bottom: 100px solid #4C5454;
+    border-bottom: 100px solid #333;
     position: absolute;
     top: -90px;
 }
@@ -722,7 +734,9 @@ h1{
 		left: 0;
 		width: initial;
 	}
-
+	.button.cotizar {
+		width: 100%;
+	}
 }
 
 
