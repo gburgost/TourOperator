@@ -4,60 +4,56 @@
 	<meta charset="UTF-8">
 	<title>WayrAtacama</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<style>
-		@font-face{font-family:'icomoon';src:url(../fonts/icomoon.eot?xh0mtb);src:url(../fonts/icomoon.eot?xh0mtb#iefix) format("embedded-opentype"),url(../fonts/icomoon.ttf?xh0mtb) format("truetype"),url(../fonts/icomoon.woff?xh0mtb) format("woff"),url(../fonts/icomoon.svg?xh0mtb#icomoon) format("svg");font-weight:400;font-style:normal}[class^="icon-"],[class*=" icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-envelope:before{content:"\e901"}.icon-home3:before{content:"\e906"}.icon-camera:before{content:"\e90f"}.icon-price-tag:before{content:"\e935"}.icon-phone:before{content:"\e942"}.icon-location:before{content:"\e947"}.icon-menu:before{content:"\e9bd"}.icon-arrow_drop_down2:before{content:"\e902"}a{text-decoration:none}body{margin:0;padding:0;font-family:'Montserrat';background:#FDFDFE;color:#5B5656}h1{font-size:40px;margin-top:0;margin-bottom:.5em}.contenedor{width:1200px;max-width:90%;margin:0 auto}.background{background-image:url(../images/pandeazucar.jpg);background-size:cover;background-position:center}.header{position:relative;padding:.5em 1em;color:#5b5656;background:#fdfdfe}.header .contacto{display:flex;justify-content:space-between;flex-wrap:wrap;position:absolute;right:1em;top:2em}.header .contacto .texto{margin:7px}.header .contacto .texto p{margin:0 .5em}.header .contacto .texto p,.header .contacto .flag img{display:inline}.portada{color:#fff;height:600px;position:relative}.logo{font-family:'Kaushan Script';font-size:48px!important;margin:0;display:inline-block}.menu{display:inline-block;font-size:18px;position:absolute;width:100%;text-align:center;background:#523F38}.menu ul{margin:0}.menu li{display:inline-block;padding:.5em}.menu a{color:#fff;text-decoration:none}.contenido{line-height:1.9;padding:2em 0;margin-top:1em}.contenedor-item{display:flex;justify-content:center;flex-wrap:wrap}.triangle2{border-bottom:100px solid #4C5454;position:absolute;top:-90px}.right2{right:0;border-left:100vw solid transparent}.left2{left:0;border-right:100vw solid transparent}.burguer-button{width:40px;height:40px;line-height:40px;border-radius:50%;background:#fb8d29;display:inline-block;text-align:center;position:fixed;right:8px;top:28px;z-index:11;color:#fff;display:none}@media screen and (min-width: 767px){.menu ul ul{display:none;position:absolute;padding:0;margin-top:.5em;margin-left:-.5em;background:rgba(30,168,150,0.8);z-index:10}.menu ul ul li{display:block;padding:.5em;text-align:left}}@media screen and (max-width: 800px){.portada{height:400px}.header .contacto .texto p{font-size:12px}}@media screen and (max-width: 767px){.header .contacto{position:static;flex-direction:column}.header .contacto .texto p{display:block}.header{text-align:center}.menu{background:rgba(30,168,150,0.9);position:fixed;top:0;z-index:2;bottom:0;right:-100%;display:flex;align-items:center;width:100%;font-size:30px;text-align:center;z-index:10}.menu ul{width:100%;padding:0;margin:0}.menu li{display:block;margin:0;padding:1em 0;border-bottom:3px solid #fff}.menu li:first-child{border-top:3px solid #fff}.menu ul ul{height:0;transform:scale(0);position:static;margin:0;font-size:20px}.menu ul ul li{border:none}.burguer-button{display:block}.contenido{margin-top:0}h1{font-size:23px!important}}
-	</style>
 </head>
 <body>
 	<section class="portada background">
 		<header class="header">
 			<div class="contenedor">
-			<figure>
-				<img src="images/logo2.png" alt="">
-			</figure>
-			<!-- <h1 class="logo">
-				WayrAtacama
-			</h1> -->
-			<div class="contacto">
-				<!-- <div class="texto">
-					<p><span class="icon-phone"></span> +569 91234567</p>
-					<p><span class="icon-envelope"></span> contacto@touroperator.cl</p>
-				</div> -->
-				<div class="flag">
-					<img src="images/flag/Chile.png" alt="">
-					<img src="images/flag/United Kingdom(Great Britain).png" alt="">	
-				</div>
-			</div>
+				<figure>
+					<img src="images/logo2.png" alt="">
+				</figure>
+				<!-- <h1 class="logo">
+					WayrAtacama
+				</h1> -->
+				<div class="contacto">
+					<!-- <div class="texto">
+						<p><span class="icon-phone"></span> +569 91234567</p>
+						<p><span class="icon-envelope"></span> contacto@touroperator.cl</p>
+					</div> -->
+					<div class="flag">
+						<img src="images/flag/Chile.png" alt="">
+						<img src="images/flag/United Kingdom(Great Britain).png" alt="">	
+					</div>
+					<nav id="menu" class="menu">
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="#" id="destino">Destinos<span class="icon-arrow_drop_down2"></span></a>
+								<ul id="dropdown" class="dropdown">
+									
+									<li>
+										<a href="parquenevado.html">P. N Nevado Tres Cruces</a>
+									</li>
+									<li>
+										<a href="pandeazucar.html">P. N Pan de Azúcar</a>
+									</li>
+									<li>
+										<a href="playalavirgen.html">Playa La Virgen</a>
+									</li>
+									<li>
+										<a href="bahiainglesa.html">Bahía Inglesa</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Programas</a></li>
+							<li><a href="#">Fotografías</a></li>
+							<li><a href="#">Contacto</a></li>
+						</ul>
+				</nav>
+				</div>	
 			</div>
 		</header>
 		<span id="burguer-button" class="burguer-button icon-menu"></span>
-		<nav id="menu" class="menu">
-			<div class="contenedor">
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="#" id="destino">Destinos<span class="icon-arrow_drop_down2"></span></a>
-						<ul id="dropdown" class="dropdown">
-							
-							<li>
-								<a href="parquenevado.html">P. N Nevado Tres Cruces</a>
-							</li>
-							<li>
-								<a href="pandeazucar.html">P. N Pan de Azúcar</a>
-							</li>
-							<li>
-								<a href="playalavirgen.html">Playa La Virgen</a>
-							</li>
-							<li>
-								<a href="bahiainglesa.html">Bahía Inglesa</a>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#">Programas</a></li>
-					<li><a href="#">Fotografías</a></li>
-					<li><a href="#">Contacto</a></li>
-				</ul>
-			</div>
-		</nav>		
+			
 	<!-- <div class="titulo-contenedor">
 		<div class="contenedor">
 			<h1>

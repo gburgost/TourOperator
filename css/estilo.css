@@ -162,18 +162,15 @@ h1{
 	position: relative;
 	padding: .5em 1em;
 	color: white;
-	background: rgba(255,153,85,0.8);
+	background: rgba(0,0,0,.5);
 	box-shadow: 0 0 10px rgba(0,0,0,.5);
 	z-index: 9;
 }
 .header .contacto {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
 	position: absolute;
-	right: 1em;
-	top: 50%;
-    margin-top: -14px;
+	top: 0;
+    right: 0;
+    text-align: right;
 }
 .header .contacto .texto {
 	margin: 7px;
@@ -206,12 +203,12 @@ h1{
 	display: inline-block;
 }
 .menu{
-	display: inline-block;
+/*	display: inline-block;
 	font-size: 18px;
 	position: absolute;
 	width: 100%;
 	text-align: right;
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,.5);*/
 }
 .menu ul {
 	margin: 0;
