@@ -154,9 +154,16 @@ h1{
 	margin-right: 2em;
 }
 .background {
-	background-image: url(../images/pandeazucar.jpg);
+	background-image: url(../images/background/pandeazucar.jpg);
 	background-size: cover;
 	background-position: center;
+}
+.background2 {
+	background-image: url(../images/background/pandeazucar.jpg);
+	background-size: cover;
+	background-position-x: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .header{
 	position: relative;
@@ -185,6 +192,11 @@ h1{
 .portada {
 	color: white;
 	height: 100vh;
+	position: relative;
+}
+.portada2 {
+	color: white;
+	height: 300px;
 	position: relative;
 }
 .header figure {
@@ -626,6 +638,7 @@ h1{
 
 	.header .flag {
 		margin-top: 1em;
+		text-align: center;
 	}
 
 	.header .contacto .texto p {
