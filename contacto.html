@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Parque Nacional Pan de Azúcar | WayrAtacama</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+	<section class="portada2 background2">
+		<header class="header">
+			<div class="contenedor">
+				<figure>
+					<img src="images/logo2.png" alt="">
+				</figure>
+				<!-- <h1 class="logo">
+					WayrAtacama
+				</h1> -->
+				<div class="contacto">
+					<!-- <div class="texto">
+						<p><span class="icon-phone"></span> +569 91234567</p>
+						<p><span class="icon-envelope"></span> contacto@touroperator.cl</p>
+					</div> -->
+					<div class="flag">
+						<img src="images/flag/Chile.png" alt="">
+						<img src="images/flag/United Kingdom(Great Britain).png" alt="">	
+					</div>
+					<nav id="menu" class="menu">
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="#" id="destino">Destinos<span class="icon-arrow_drop_down2"></span></a>
+								<ul id="dropdown" class="dropdown">
+									
+									<li>
+										<a href="parquenevado.html">P. N Nevado Tres Cruces</a>
+									</li>
+									<li>
+										<a href="pandeazucar.html">P. N Pan de Azúcar</a>
+									</li>
+									<li>
+										<a href="playalavirgen.html">Playa La Virgen</a>
+									</li>
+									<li>
+										<a href="bahiainglesa.html">Bahía Inglesa</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Programas</a></li>
+							<li><a href="#">Fotografías</a></li>
+							<li><a href="contacto.html">Contacto</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<span id="burguer-button" class="burguer-button icon-menu"></span>	
+	</section>
+	<section class="contenido">
+		<div class="contenedor fondo-logo">
+			<h1>
+				Contacto
+			</h1>
+			
+		</div>
+	</section>
+	<!-- <div id="formulario" class="formulario">
+		<form action="">
+			<label for="name">Nombre</label>
+			<input type="text"  name="name" placeholder="Escribe tu nombre..." />
+			<label for="lastname">Apellido</label>
+			<input type="text" name="lastname" placeholder="Escribe tu apellido..." />
+			<label for="email">E-mail</label>
+			<input type="mail" name="email" placeholder="Escribe tu e-mail..." />
+			<label for="comment">Comentario</label>
+			<textarea name="comment" id="" cols="30" rows="6" placeholder="Escribe un comentario..."></textarea>
+			<button class="button" name="enviar" type="submit">Enviar</button>
+		</form>
+			<button id="cancelar" class="button">Cancelar</button>
+
+	</div> -->
+	<footer class="footer foot">
+		<div class="left2 triangle2"></div>
+  		<div class="right2 triangle2"></div>
+  		<p><a href="">Quienes somos</a></p>
+  		<div class="contacto">
+			<p><a href="" class="face"><span class="icon-facebook"></span></a></p>
+			<p><a href="" class="twitter"><span class="icon-twitter"></span></a></p>
+			<p><a href="" class="insta"><span class="icon-instagram"></span></a></p>
+  		</div>
+	</footer>
+	<div id="capa" class="capa"></div>
+	<script src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>
+	  WebFont.load({
+	    google: {
+	      families: ['Kaushan Script', 'Montserrat:400,700', 'Open Sans:300,400,600,700,800']
+	    }
+	  });
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script>
+		var consulta = window.matchMedia('(max-width: 650px)');
+    	consulta.addListener(mediaQuery);
+
+    	var $burguerButton = document.getElementById('burguer-button');
+    	var $menu = document.getElementById('menu');
+    	
+    	function toggleMenu(){
+    		$menu.classList.toggle('active')
+    	};
+
+    	function showMenu(){
+    		$menu.classList.add('active')
+    	};
+
+    	function hideMenu(){
+    		$menu.classList.remove('active')
+    	};
+
+    	function mediaQuery() {
+    		if(consulta.matches) {
+    			console.log('se cumplio');
+    			$burguerButton.addEventListener('touchstart', toggleMenu);
+	    	}
+	    	else {
+	    		console.log('no se cumplio');
+    			$burguerButton.removeEventListener('touchstart', toggleMenu);
+
+	    	}
+    	}
+    	mediaQuery();
+
+    	var $body = document.body;
+
+    	var gestos = new Hammer($body);
+		gestos.on('swiperight', hideMenu);
+		gestos.on('swipeleft', showMenu);
+
+		var $drop = document.getElementById("dropdown");
+
+		function toggleDestino(){
+    		$drop.classList.toggle('active')
+    	};
+		var $destino = document.getElementById('destino');
+		$destino.addEventListener('click', toggleDestino);
+
+		var $item = document.getElementById("item-incluye");
+		var $itemNoincluye = document.getElementById("item-noincluye");
+		var $itemCircuito = document.getElementById("item-circuito");
+
+		function toggleitemIncluye(){
+    		$item.classList.toggle('active');
+    		$itemNoincluye.classList.remove('active');
+    		$itemCircuito.classList.remove('active');
+    		$incluye.classList.toggle('active');
+    		$noincluye.classList.remove('active');
+    		$circuito.classList.remove('active');
+
+
+    	};
+    	function toggleitemNoincluye() {
+    		$itemNoincluye.classList.toggle('active');
+    		$item.classList.remove('active');
+    		$itemCircuito.classList.remove('active');
+    		$noincluye.classList.toggle('active');
+    		$incluye.classList.remove('active');
+    		$circuito.classList.remove('active');
+    	};
+    	function toggleitemCircuito() {
+    		$itemCircuito.classList.toggle('active');
+    		$item.classList.remove('active');
+    		$itemNoincluye.classList.remove('active');
+    		$circuito.classList.toggle('active');
+    		$incluye.classList.remove('active');
+    		$noincluye.classList.remove('active');
+    	};
+		var $incluye = document.getElementById('incluye');
+		$incluye.addEventListener('click', toggleitemIncluye);
+
+		var $noincluye = document.getElementById('noincluye');
+		$noincluye.addEventListener('click', toggleitemNoincluye);
+
+		var $circuito = document.getElementById('circuito');
+		$circuito.addEventListener('click', toggleitemCircuito);
+
+		var $formulario = document.getElementById('formulario');
+		var $capa = document.getElementById('capa');
+		function toggleFormulario() {
+			$formulario.classList.toggle('active');
+			$capa.classList.toggle('active');
+		};
+
+		var $cotizar = document.getElementById('cotizar');
+		var $cancelar = document.getElementById('cancelar');
+		$cotizar.addEventListener('click', toggleFormulario);
+		$cancelar.addEventListener('click', toggleFormulario);
+
+	</script>
+	<script src="js/unslider.min.js"></script>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/unslider.css">
+	<script>
+		jQuery(document).ready(function($) {
+			$('.slider').unslider({
+				autoplay: true 
+			});
+		});
+	</script>
+</body>
+</html>

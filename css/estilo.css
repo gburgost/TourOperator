@@ -196,7 +196,7 @@ h1{
 }
 .portada2 {
 	color: white;
-	height: 300px;
+	height: 260px;
 	position: relative;
 }
 .header figure {
@@ -280,8 +280,7 @@ h1{
 }
 .contenido {
 	line-height: 1.9;
-	padding: 2em 0; 
-	margin-top: 1em;	
+	padding: 1em 0; 
 }
 .fondo-logo {
 	background: url(../images/logo-fondo.png) no-repeat;
