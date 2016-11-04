@@ -627,7 +627,10 @@ h1{
 }
 
 @media screen and (max-width: 767px)
-{
+{	
+	.fondo-logo {
+		background: none;
+	}
 	.titulo-contenedor h1{
 		font-size: 40px!important;
 	}
@@ -757,6 +760,9 @@ h1{
 	}
 	.button.cotizar {
 		width: 100%;
+	}
+	.promocion p {
+		text-align: left;
 	}
 }
 
