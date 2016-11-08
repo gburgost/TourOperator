@@ -153,17 +153,40 @@ h1{
 	display: inline;
 	margin-right: 2em;
 }
+.portada {
+	color: white;
+	height: 100vh;
+	position: relative;
+}
+.portada2 {
+	color: white;
+	height: 260px;
+	position: relative;
+}
 .background {
 	background-image: url(../images/background/pandeazucar.jpg);
 	background-size: cover;
 	background-position: center;
 }
 .background2 {
-	background-image: url(../images/background/pandeazucar.jpg);
 	background-size: cover;
-	background-position-x: center;
+	background-position-y: -10em;
 	background-attachment: fixed;
     background-repeat: no-repeat;
+}
+.background2.pandeazucar {
+	background-image: url(../images/background/paginas/pandeazucar.jpg);
+	background-position-y: initial;
+}
+.background2.parquenevado {
+	background-image: url(../images/background/paginas/parquenevado.jpg);
+}
+.background2.bahia {
+	background-image: url(../images/background/paginas/Bahia-Inglesa-.jpg);
+}
+.background2.lavirgen {
+	background-image: url(../images/background/paginas/virgen.jpg);
+	background-position-y: -18em;
 }
 .header{
 	position: relative;
@@ -189,16 +212,7 @@ h1{
 .header .contacto .flag img {
 	display: inline;
 }
-.portada {
-	color: white;
-	height: 100vh;
-	position: relative;
-}
-.portada2 {
-	color: white;
-	height: 260px;
-	position: relative;
-}
+
 .header figure {
 	display: inline-block;
 	margin: 0;
