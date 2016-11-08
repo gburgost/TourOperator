@@ -389,7 +389,6 @@ h1{
 	transform: scale(0);
 	position: static;
 	margin:0;
-	font-size: 20px;
 	transition: .3s;
 }
 .item.active{
