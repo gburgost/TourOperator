@@ -335,7 +335,7 @@ h1{
 }
 .button {
 	background: #FF715B;
-	padding: 1em;
+	padding: .7em 1em;
 	border: none;
 	border-radius: 5px;
 	color: white;
@@ -363,7 +363,7 @@ h1{
 
 .detalles button {
 	background: #4C5454;
-	padding: 1em;
+	padding: .7em 1em;
 	border: none;
 	border-radius: 5px;
 	color: white;
