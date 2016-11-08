@@ -470,7 +470,7 @@ h1{
 .footer {
 	position: relative;
 	background: #333;
-	padding: 3em;
+	padding: 2em;
 	color: white;
 	margin-top: 4em;
 }
@@ -517,9 +517,9 @@ h1{
 }
 
 .triangle2 {
-    border-bottom: 100px solid #333;
+    border-bottom: 80px solid #333;
     position: absolute;
-    top: -90px;
+    top: -50px;
 }
 
 .right2 {
@@ -764,7 +764,7 @@ h1{
 		width: 100% !important;
 	}
 	.footer {
-		padding: 3em 0;
+		padding: 2em 0;
 	}
 	.formulario{
 		margin: 0;
