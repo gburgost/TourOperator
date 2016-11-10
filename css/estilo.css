@@ -134,6 +134,7 @@ h1{
 .contenedor h1{
 	text-transform: uppercase;
 	font-size: 30px;
+	text-align: left;
 }
 .redes {
 	background: #523F38;
@@ -192,7 +193,7 @@ h1{
 	position: relative;
 	padding: .5em 1em;
 	color: white;
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,.6);
 	box-shadow: 0 0 10px rgba(0,0,0,.5);
 	z-index: 9;
 }
@@ -294,7 +295,7 @@ h1{
 }
 .contenido {
 	line-height: 1.9;
-	padding: 1em 0; 
+	padding: 3em 0; 
 }
 .fondo-logo {
 	background: url(../images/logo-fondo.png) no-repeat;
@@ -325,7 +326,7 @@ h1{
 .contenido .contenedor-slider .slider img {
 	width: 100%;
 }
-.promocion p {
+.promocion .contenedor-text {
 	width: 44%;
     display: inline-block;
     vertical-align: top;
@@ -362,21 +363,23 @@ h1{
 }
 
 .detalles button {
-	background: #4C5454;
+	background: none;
 	padding: .7em 1em;
-	border: none;
-	border-radius: 5px;
-	color: white;
+	border-bottom: 2px solid;
+	border-radius: 0;
+	color: #c7c7c7;
 	font-size: 16px;
 	margin-right: 1em;
 	cursor: pointer;
 	transition: .3s;
 	outline: none;
-	width: initial;
+	width: 300px;
+	text-align: left;
 }
 .detalles button.active,
 .detalles button:hover {
-	background: #e65741;
+	color: #5a5959;
+	background:none;
 }
 .item ul li{
 	list-style: none;
@@ -468,7 +471,7 @@ h1{
 }
 .footer {
 	position: relative;
-	background: #333;
+	background: rgba(0, 0, 0, 0.8);
 	padding: 2em;
 	color: white;
 	margin-top: 4em;
@@ -484,7 +487,7 @@ h1{
 	text-align: center;
 	background: red;
 	padding: 1em;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.8);
 	color: white
 }
 .foot p {
@@ -503,20 +506,8 @@ h1{
 .foot .insta:hover{
 	color: #BC2A8D;
 }
-.footer-inicio{
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	text-align: center;
-	background: red;
-	padding: 1em;
-	background: rgba(0, 0, 0, 0.5);
-	color: white
-}
-
 .triangle2 {
-    border-bottom: 80px solid #333;
+    border-bottom: 80px solid rgb(51, 51, 51);
     position: absolute;
     top: -50px;
 }
@@ -754,7 +745,7 @@ h1{
 	.unslider-arrow.prev {
 		top: 32%;
 	}
-	.promocion p {
+	.promocion .contenedor-text {
 		width: 100%;
 		display: block;
 		margin: 0;
@@ -773,7 +764,7 @@ h1{
 	.button.cotizar {
 		width: 100%;
 	}
-	.promocion p {
+	.promocion .contenedor-text {
 		text-align: left;
 	}
 }
