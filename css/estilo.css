@@ -295,7 +295,7 @@ h1{
 }
 .contenido {
 	line-height: 1.9;
-	padding: 3em 0; 
+	padding: 2em 0; 
 }
 .fondo-logo {
 	background: url(../images/logo-fondo.png) no-repeat;
@@ -304,6 +304,7 @@ h1{
 .contenido .contenedor-slider{
 	width: 50%;
 	display: inline-block;
+	margin-top: 1em;
 }
 .unslider {
 	position: relative;
