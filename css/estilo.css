@@ -498,13 +498,13 @@ h1{
 .foot a {
 	color: white;
 }
-.foot .face:hover{
+.face:hover{
 	color: #637BAD;
 }
-.foot .twitter:hover{
+.twitter:hover{
 	color: #55ACEE;
 }
-.foot .insta:hover{
+.insta:hover{
 	color: #BC2A8D;
 }
 .triangle2 {
@@ -561,17 +561,70 @@ h1{
 .formulario label,
 .formulario input,
 .formulario textarea{
-	display: inline-block;
+	/*display: inline-block;
 	width: 97%;
 	margin-bottom: .5em;
 	border-radius: 5px;
-	border:none;
+	border:none;*/
+}
+.contenedor-input {
+	display: inline-block;
+	width: 45%;
+	padding: 0 15px
+}
+.contenedor-input.textarea {
+	width: 95.5%;
+}
+.contenedor-input button {
+	width: initial;
 }
 .formulario textarea{
 	margin: 0;
 }
 .formulario input,
 .formulario textarea{
+	padding: 1em .5em;
+	font-size: 14px;
+	border: 1px solid #d6d6d6;
+}
+.social {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+.social a {
+	color: #5B5656;
+}
+.social p {
+	display: inline;
+	font-size: 20px;
+	padding-right: 2em;
+}
+.form-contacto{
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
+	transition: .3s;
+	margin-left: 2em;
+	margin-top: 1em;
+}
+.form-contacto.active{
+	top: 0;
+}
+.form-contacto label,
+.form-contacto input,
+.form-contacto textarea{
+	display: inline-block;
+	width: 97%;
+	margin-bottom: .5em;
+	border-radius: 5px;
+	border:none;
+}
+.form-contacto textarea{
+	margin: 0;
+}
+.form-contacto input,
+.form-contacto textarea{
 	padding: 1em .5em;
 	font-size: 14px;
 	border: 1px solid #d6d6d6;
@@ -627,6 +680,12 @@ h1{
 	}
 	.header .contacto .texto p{
 		font-size: 12px;
+	}
+	.social,
+	.form-contacto {
+		display: block;
+		width: 100%;
+		margin-left: 0;
 	}
 }
 
@@ -767,6 +826,10 @@ h1{
 	}
 	.promocion .contenedor-text {
 		text-align: left;
+	}
+	.contenedor-input {
+		width: 100%;
+		padding: 0;
 	}
 }
 
