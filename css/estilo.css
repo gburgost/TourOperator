@@ -690,7 +690,13 @@ h1{
 }
 
 @media screen and (max-width: 767px)
-{	
+{
+	.background2 {
+		background-size: cover;
+		background-position-y: 0;
+		background-attachment: initial;
+	    background-repeat: no-repeat;
+	}	
 	.fondo-logo {
 		background: none;
 	}
